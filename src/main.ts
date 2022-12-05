@@ -1,8 +1,5 @@
-import feather from "feather-icons";
 import "./style.css";
 import { randomIntFromInterval, runTaskBetween, runTaskTimes } from "./util";
-
-feather.replace();
 
 let b = false;
 let initialTime = new Date().getTime();

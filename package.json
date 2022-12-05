@@ -15,8 +15,5 @@
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   },
-  "dependencies": {
-    "@types/feather-icons": "^4.29.0",
-    "feather-icons": "^4.29.0"
-  }
+  "dependencies": {}
 }
