@@ -11,11 +11,11 @@ document.body.addEventListener("click", (e: MouseEvent) => tap(e.pageX));
 
 function tap(pageX: number) {
   if (!b) {
+    b = true;
     try {
       document.body.requestFullscreen();
       return;
     } catch (e) {}
-    b = true;
   }
 
   if (new Date().getTime() - initialTime < 3000) return;
