@@ -1,4 +1,4 @@
-# Einzelhoton am Doppelspalt
+# Einzelphoton am Doppelspalt
 
 #### Diese Website ist eine kleine "Präsentation", die ich für eine Physikstunde gebastelt habe. Viel Zeit hatte ich für den Code nicht, deswegen ist der leider etwas "geschmiert"
 
