@@ -8,11 +8,13 @@ document.body.addEventListener("click", (e: MouseEvent) => tap(e.pageX));
 
 function tap(pageX: number) {
   if (!b) {
-    b = true;
     try {
       document.body.requestFullscreen();
+      b = true;
       return;
-    } catch (e) {}
+    } catch (e) {
+      b = true;
+    }
   }
 
   if (new Date().getTime() - initialTime < 3000) return;
@@ -354,7 +356,7 @@ function seventhToEight() {
   headline2.style.top = null;
   headline2.classList.toggle("absolute");
 
-  headline1.innerHTML = "Das wars :)";
+  headline1.innerHTML = "Das war's :)";
   headline2.innerHTML = "Danke für eure Aufmerksamkeit.";
 }
 
