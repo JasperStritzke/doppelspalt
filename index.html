@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0" />
+    <title>Einzelphoton am Doppelspalt</title>
+    <script src="./src/main.ts" type="module"></script>
+  </head>
+  <body class="bg-black select-none">
+    <p class="fixed bottom-5 left-0 right-0 text-center text-white text-2xl tracking-widest select-none">
+      <b id="page">1</b>
+      von
+      <b>8</b>
+    </p>
+
+    <div class="fixed bottom-0 right-0 top-0 left-0 justify-center flex flex-col items-center text-white" id="p1">
+      <h1 class="w-full text-center text-6xl font-bold fold-in">Einzelphoton am Doppelspalt</h1>
+      <p class="text-3xl pt-5 fold-in-2">von Jasper Stritzke</p>
+    </div>
+    <div class="fixed bottom-0 right-0 top-0 left-0 justify-center items-center flex flex-col opacity-0 transition-all duration-500 hidden" id="p2">
+      <div id="interferenz" class="flex flex-row justify-around relative" style="width: 800px; height: 400px">
+        <div class="absolute text-3xl text-white" style="top: -100px" data-headline="p2-1">Doppelspalt Interferenzmuster</div>
+        <div class="absolute tracking-widest text-white font-extralight" style="top: -60px" data-headline="p2-2">λ = 650nm</div>
+      </div>
+    </div>
+  </body>
+  <span class="hidden bg-red duration-100" />
+</html>

@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fade-away {
+  transform: translateX(0) scale(1);
+}
+
+.fade-away.left {
+  animation: fadeLeft 0.75s forwards ease-out;
+}
+
+.fade-away.right {
+  animation: fadeRight 0.75s forwards ease-out;
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateX(0) scale(1);
+  }
+  to {
+    transform: translateX(-75vw) scale(3);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateX(0) scale(1);
+  }
+  to {
+    transform: translateX(75vw) scale(3);
+  }
+}
+
+.fold-in {
+  transform: rotateX(90deg);
+  animation: foldIn 1s forwards ease-in-out;
+}
+
+.fold-in-2 {
+  transform: rotateX(90deg);
+  animation: foldIn 1s ease-in-out 1s forwards;
+}
+
+@keyframes foldIn {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.fly-up {
+  transform: translateY(0);
+  animation: flyUp 0.5s forwards ease-in-out;
+}
+
+@keyframes flyUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+.show-labels::after {
+  content: attr(data-hits);
+  position: relative;
+  top: -5px;
+  right: -40px;
+  text-align: center;
+  @apply text-white font-bold;
+}
